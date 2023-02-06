@@ -1,6 +1,8 @@
 # Kerf Check Parts Generator (Flask版)
 元ネタは[こちら](https://doyolab.net/appli/kerf_check/kerf_check.html)です。
+
 SVG生成の処理を Python で実行するようにしています。
+Tボーンフィレット生成機能を追加しました。
 
 ## インストール
 ```bash
