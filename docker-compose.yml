@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  flaskkerfcheck:
+    image: flaskkerfcheck
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - 5004:5004

@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  flaskkerfcheck:
+    image: flaskkerfcheck
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    command: ["sh", "-c", "pip install debugpy -t /tmp && python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 -m flask run --no-debugger --no-reload --host 0.0.0.0 --port 5004"]
+    ports:
+      - 5004:5004
+      - 5678:5678
+    environment:
+      - FLASK_KERF_CHECK=app.py
