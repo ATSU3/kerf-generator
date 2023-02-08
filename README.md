@@ -1,20 +1,23 @@
-# Kerf Check Parts Generator (Flask版)
-元ネタは[こちら](https://doyolab.net/appli/kerf_check/kerf_check.html)です。
+# Kerf Check Parts Generator
 
-SVG生成の処理を Python で実行するようにしています。
-Tボーンフィレット生成機能を追加しました。
+The original application is [here](https://doyolab.net/appli/kerf_check/kerf_check.html).
 
-## インストール
+Performing the SVG image generation process in Python
+Added T-bone fillet generation.
+
+Shank-diameter (shank-diameter) can be set to 0 to eliminate the T-Bone fillet.
+
+## Install
 ```bash
 docker-compose build
 ```
 
-## 起動
+## Run
 ```bash
 docker-compose up -d
 ```
 
-## アクセス先
+## Access
 ```
 http://localhost:5004
 ```
